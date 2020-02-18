@@ -1,0 +1,11 @@
+.imgGrid {
+  padding: 10px;
+  max-height: 350px;
+}
+
+#TopButton {
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+}
+/*# sourceMappingURL=style.css.map */
