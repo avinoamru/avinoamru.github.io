@@ -1,4 +1,4 @@
-
+var APIKey = "UGmP7NlevUlqekQ5mfCORmTf4acrgy2e8XyRe81P";
 const apod = (whereTo) => {
   fetch(`https://api.nasa.gov/planetary/apod?api_key=${APIKey}`)
     .then(async response => {
