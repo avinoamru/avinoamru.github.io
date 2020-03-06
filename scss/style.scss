@@ -1,0 +1,94 @@
+/*==================
+      Variables
+===================*/
+
+$iphoneCamColor: rgba(10, 10, 10, 0.842);
+$iphonScreenBackgroundColor: rgba(216, 216, 216, 0.541);
+
+$iphoneCam-width:200px;
+$iphoneCam-height: 35px;
+$iphoneCam-radius: 0px 0px 20px 20px;
+
+ 
+
+.content-center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+  main {
+      margin-top: 10vh;
+
+      
+  }
+
+
+  @media only screen and (max-width: 400px){
+
+    
+    main {
+        margin-top: 0 !important;
+  
+        
+    }
+
+    .iphone-screen{
+        height: 100% !important; 
+        overflow: auto !important;
+        width: 100% !important;
+        background-color: $iphonScreenBackgroundColor !important;
+
+        border-radius: 15px 15px 15px 15px;
+    
+         .main-content{
+          margin-top: 0px !important;
+          width: 80% !important;
+          
+          
+      }
+    
+    }
+
+  }
+
+  @media only screen and (max-width: 600px){
+
+
+  }
+
+  @media only screen and (max-width: 800px){
+
+
+  }
+
+  @media only screen and (max-width: 1200){
+
+
+  }
+
+.iphone-screen{
+    height: 80vh;
+    overflow: auto;
+    width: 30vw;
+    background-color: $iphonScreenBackgroundColor;
+
+     .main-content{
+      margin-top: 100px;
+      width: 300px;
+      
+      
+  }
+
+}
+
+.iphone-screen::-webkit-scrollbar{
+    display: none;
+}
+
+.iphone-cam{
+    width: $iphoneCam-width;
+    height: $iphoneCam-height;
+    background-color: $iphoneCamColor;
+    border-radius: $iphoneCam-radius;
+    
+}
