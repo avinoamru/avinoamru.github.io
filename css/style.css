@@ -8,7 +8,7 @@
 main {
   margin-top: 10vh; }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
   main {
     margin-top: 0 !important; }
   .iphone-screen {
