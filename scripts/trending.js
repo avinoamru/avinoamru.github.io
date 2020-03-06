@@ -18,7 +18,7 @@ fetch (`https://api.giphy.com/v1/gifs/trending?api_key=${APIKEY}` + `&limit=20&r
                 let embedUrl = dataVals[i].embed_url
                 
                 
-                $(".gifRows").append(`<iframe src=${embedUrl} frameborder= 0  class= gifs col-md-2  width=300 ></iframe>`);
+                $(".main-content").append(`<iframe src=${embedUrl} frameborder= 0  class= gifs col-md-2  width=300 ></iframe>`);
 
                 
 
