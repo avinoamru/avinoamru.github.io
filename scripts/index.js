@@ -19,7 +19,7 @@ fetch (`http://api.giphy.com/v1/gifs/search?q=${inputSearch}&limit=12&offset=0&r
                 let embedUrl = data[i].embed_url;
                 // console.log(embedUrl);
                 
-                $("#gifRow").append(`<iframe src=${embedUrl} frameborder= 0  class= gifs content-center ></iframe>`);
+                $(".main-content").append(`<iframe src=${embedUrl} frameborder= 0  class= gifs content-center ></iframe>`);
                 
                 
                 
