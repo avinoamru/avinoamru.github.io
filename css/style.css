@@ -10,7 +10,9 @@ main {
 
 @media only screen and (max-width: 600px) {
   main {
-    margin-top: 0 !important; }
+    margin-top: 0 !important;
+    width: 100%;
+    height: 100%; }
   .iphone-screen {
     height: 100% !important;
     overflow: auto !important;
