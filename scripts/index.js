@@ -1,7 +1,7 @@
 const APIKEY = "AEVsKgezUpfMqYSUoHJv9QTsPouuMCtt";
 
 function searchGif(){
-    const input = document.getElementById("searchInput");
+    const input = document.getElementById("search-box");
     let inputSearch = input.value;
 fetch (`http://api.giphy.com/v1/gifs/search?q=${inputSearch}&limit=12&offset=0&rating=G&lang=en`+`&api_key=${APIKEY}`)
 .then(response=> {
@@ -14,12 +14,12 @@ fetch (`http://api.giphy.com/v1/gifs/search?q=${inputSearch}&limit=12&offset=0&r
         console.log(data);
         
         $(document).ready(function () {
-            $("#gifRow").empty();
+            $("#.iphone-content").empty();
             for (let i =0; i < data.length; i++){
                 let embedUrl = data[i].embed_url;
                 // console.log(embedUrl);
                 
-                $(".main-content").append(`<iframe src=${embedUrl} frameborder= 0  class= gifs content-center ></iframe>`);
+                $(".iphone-content").append(`<iframe src=${embedUrl} frameborder= 0  class= gifs content-center ></iframe>`);
                 
                 
                 
