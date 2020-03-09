@@ -78,6 +78,10 @@ body {
   padding: 5px;
   margin-top: 20px; }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 19ecd5cfa0b63a6c6bf4a079f3da9f9dba5c4197
 /*===============
       Queries
 =================*/
@@ -98,10 +102,18 @@ body {
   .gifs {
     width: 50%;
     padding: 5px;
+<<<<<<< HEAD
     margin-top: 20px; } }
+=======
+    margin-top: 20px; }
+>>>>>>> 19ecd5cfa0b63a6c6bf4a079f3da9f9dba5c4197
 
 @media only screen and (max-width: 400px) {
   .gifs {
     width: 100%;
     padding: 5px;
+<<<<<<< HEAD
     margin-top: 20px; } }
+=======
+    margin-top: 20px; }
+>>>>>>> 19ecd5cfa0b63a6c6bf4a079f3da9f9dba5c4197
