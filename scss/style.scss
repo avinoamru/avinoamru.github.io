@@ -1,5 +1,5 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
 /*==================
@@ -8,94 +8,159 @@
 
 // iphone screen
 $iphonScreenBackgroundColor: rgba(216, 216, 216, 0.541);
-$iponeScreenHeight: 800px; 
-$iphoneScreenWidth: 450px;
+$iponeScreenHeight: 750px;
+$iphoneScreenWidth: 400px;
 
-// iphone cam
-$iphoneCamBackgroundColor: black;
-$iphoneCamWidth:200px;
-$iphoneCamHeight: 30px;
-$iphoneCamRadius: 0px 0px 20px 20px;
-
+// iphone notch
+$iphonenotchBackgroundColor: black;
+$iphonenotchWidth: 200px;
+$iphonenotchHeight: 30px;
+$iphonenotchRadius: 0px 0px 20px 20px;
 
 /*=====================
       Global Classes
 ======================*/
 .center {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-
 
 /*=====================
       Classes
 ======================*/
 
+.iphone-screen {
+  border: 10px black solid;
+  border-radius: 60px;
+  margin-top: 5vh;
+  height: $iponeScreenHeight;
+  width: $iphoneScreenWidth;
+  background-color: $iphonScreenBackgroundColor;
+  overflow: auto;
 
+  .iphone-notch {
+    height: $iphonenotchHeight;
+    width: $iphonenotchWidth;
+    border-radius: $iphonenotchRadius;
+    background-color: $iphonenotchBackgroundColor;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 47px;
+  }
 
+  .iphone-speaker {
+    width: 100px;
+    height: 10px;
+    // creating the lined ear speaker
+    background: repeating-linear-gradient(
+      rgb(83, 83, 83),
+      rgba(0, 0, 0, 0.822)
+    );
 
-.iphone-screen{
+    border-radius: 20px;
+    position: relative;
+    left: 50px;
+    top: 10px;
+  }
 
-    border: 10px black solid;
-    border-radius: 60px ;
-    margin-top: 10vh;
-    height: $iponeScreenHeight;
-    width: $iphoneScreenWidth;
-    background-color: $iphonScreenBackgroundColor;
-    overflow: auto;
-
-    .iphone-cam{
-        height: $iphoneCamHeight;
-        width: $iphoneCamWidth;
-        border-radius: $iphoneCamRadius;
-        background-color: $iphoneCamBackgroundColor;
-
-    }
+  .iphone-cam {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: repeating-radial-gradient(grey, black);
+    position: relative;
+    left: 170px;
+    top: -2px;
+  }
 }
-.iphone-screen::-webkit-scrollbar{
-    display: none;
+
+.iphone-screen::-webkit-scrollbar {
+  display: none;
 }
-
-
-
-
 
 .gif-search {
-    text-align: center;
-    margin-top: 10px;
-    #search-box{
-        width: 200px;
-        font-size: 20px;
-        height: 30px;
-    }
+  text-align: center;
+  margin-top: 40px;
+  #search-box {
+    width: 200px;
+    font-size: 20px;
+    height: 30px;
+  }
 
-    #search-button{
-
-        margin-left: 10px;
-        font-size: 20px;
-    }
+  #search-button {
+    margin-left: 10px;
+    font-size: 20px;
+  }
 }
 
+.gifs {
+  width: 33.333333333333333333333333333333333333333333333333333333333333333333333333333333333333%;
+  padding: 5px;
+  margin-top: 20px;
+}
 
+#top-btn {
+  font-size: 24px;
+  font-weight: 600;
+  color: black;
+  text-decoration: none;
+  display: none;
+  position: sticky;
+  top: 600px;
+  left: 20px;
+  background-color: rgba(160, 160, 160, 0.726);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 2px 4px black;
+  transition: 0.5s;
+}
+#top-btn:hover {
+  background-color: rgb(230, 230, 230);
+  box-shadow: 1px 2px 14px black;
+}
 
 /*===============
       Queries
 =================*/
 
-@media only screen and (max-width: 600px) {
-    .iphone-screen {
+@media only screen and (max-width: 800px) {
+  .iphone-screen {
+    margin-top: 0;
+    border: none !important;
+    width: 100% !important;
+    height: 100vh !important;
+    position: absolute;
+    left: 0 !important;
+    top: 0 !important;
+    border-radius: 0px 0px 0px 0px !important;
 
-        position: absolute;
-        left: 0;
-        top: 0;
-        border: none !important;
-        width: 100vw !important;
-        height: 100vh !important;
-
-        
+    .iphone-notch {
+      display: none;
     }
+  }
+}
 
+@media only screen and (max-width: 600px) {
+  .gifs {
+    width: 50%;
+    padding: 5px;
+    margin-top: 20px;
+  }
 
-    
+  #top-btn{
+      display: inline;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .gifs {
+    width: 100%;
+    padding: 5px;
+    margin-top: 20px;
+  }
+
+  #top-btn{
+    display: inline;
+}
 }
