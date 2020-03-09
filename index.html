@@ -5,32 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GIPHY Search</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   </head>
+
   <body>
     <main class=" iphone-screen center">
-      <span id="top-screen"></span> <!---for the top button--->
       <div class=" iphone-notch center">
         <div class="iphone-speaker"></div>
         <div class="iphone-cam"></div>
       </div>
-      <a id="top-btn" href="#top-screen">Top</a>
       <div class="center gif-search">
         <input type="search" id="search-box" />
-        <button type="submit" id="search-button" onclick="searchGif()">
-          Search Gif
-        </button>
+        <button type="submit" class="fa fa-search" id="search-button" onclick="searchGif()"></button>
       </div>
       <div class="iphone-content"></div>
     </main>
 
-    <!-- </div>     -->
 
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-
+    <script src="./scripts/jQuery.js"></script>
     <script src="./scripts/index.js"></script>
+    
   </body>
 </html>
